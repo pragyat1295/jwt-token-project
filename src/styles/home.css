@@ -1,0 +1,201 @@
+.page_layout {
+    background: #F5F5F5;
+}
+.head_content {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.filler_content {
+    font-weight: 400;
+    font-size: 1rem;
+    width: 60%;
+    margin-top: 3%;
+}
+
+.starterd_btn {
+    border: none;
+    color: white;
+    font-size: 1rem;
+    background-color: black;
+    margin-top: 2%;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+/* ----------- Our features ------0 */
+
+.features_head {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 3%;
+}
+
+.features_box {
+    border: 0.8px solid #000000;
+    padding: 4%;
+    border-radius: 25px;
+}
+
+.features_box:hover {
+    color: white;
+    background: #F84F7B;
+}
+
+
+.feature_head {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.features_desc {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+
+/* .parent_try {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 100px;
+    background: #3c31dd;
+}
+
+.curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(216, 21%, 16%);
+}
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #3c31dd;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+} */
+
+.box {
+    --size: 50px;
+    --p: 25px;
+    --R: 55.9px
+        /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/
+    ;
+
+    height: 200px;
+    /* margin: 10px 0; */
+
+    -webkit-mask:
+        radial-gradient(var(--R) at left 50% var(--d, top) calc(var(--size) + var(--p)), #000 99%, #0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+        radial-gradient(var(--R) at left 50% var(--d, top) calc(-1*var(--p)), #0000 99%, #000 101%) left 50% var(--d, top) var(--size)/calc(4*var(--size)) 100% repeat-x;
+    background: black;
+    border: none;
+}
+
+/* .box  {
+    --d: bottom;
+  } */
+
+.box_content {
+    background: #000;
+    color: white;
+    padding: 4%;
+}
+
+.box_rev {
+    --size: 50px;
+    --p: 25px;
+    --R: 55.9px
+        /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/
+    ;
+
+    height: 200px;
+    /* margin: 10px 0; */
+
+    -webkit-mask:
+        radial-gradient(var(--R) at left 50% var(--d, top) calc(var(--size) + var(--p)), #000 99%, #0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+        radial-gradient(var(--R) at left 50% var(--d, top) calc(-1*var(--p)), #0000 99%, #000 101%) left 50% var(--d, top) var(--size)/calc(4*var(--size)) 100% repeat-x;
+    background: black;
+    border: none;
+}
+
+.box_rev {
+    --d: bottom;
+}
+
+.faq_block {
+    margin-top: 3%;
+}
+.questions {
+    width: 70%;
+    margin: auto;
+    border-bottom: 2px solid #E0E0E0;
+    padding:  2% 0%;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.plus {
+    color: #F84F7B;
+    font-size: 1.5rem;
+    font-weight: 800;
+
+}
+
+.answers {
+    margin-top: 3%;
+    width: 70%;
+    color: #545454;
+    font-weight: 350;
+    font-size: 1.2rem;
+}
+
+/* ------------- Contact Form ----------------- */
+
+.form_container {
+    background: #F84F7B;
+    color: #fff;
+    padding: 5%;
+}
+.form_input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    border: none;
+    padding: 10px 3px;
+    border-radius: 10px;
+    padding-left: 3%;
+}
+
+.form_input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.form_input:focus {
+    outline: none;
+}
+
+
+/* ================================================= */

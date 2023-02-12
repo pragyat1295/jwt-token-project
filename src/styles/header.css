@@ -1,0 +1,34 @@
+.link_tag {
+    text-decoration: none;
+    color: white;
+}
+
+.link_tag:hover {
+    color: grey;
+}
+
+.contact_btn {
+    background: #212024;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 5.5vh;
+    width: 7vw;
+    font-size: 1rem;
+}
+
+/* ======================================================== */
+
+/* ------------ Footer ---------------------- */
+  .footer_container {
+    background: #ff7599;
+    padding: 2%;
+    color: #FFF;
+
+  }
+
+  .logo_section {
+    display: flex;
+    justify-content: space-around;
+    padding: 0% 2%;
+  }
