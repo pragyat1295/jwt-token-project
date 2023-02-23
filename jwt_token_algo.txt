@@ -1,0 +1,199 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useHistory } from 'react-router-dom';
+
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const history = useHistory();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('/api/login', { email, password });
+      const { token } = response.data;
+      localStorage.setItem('jwtToken', token);
+      axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+      history.push('/');
+    } catch (error) {
+      setError('Incorrect email or password');
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <h1>Login</h1>
+      <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        required
+      />
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+      <button type="submit">Login</button>
+    </form>
+  );
+};
+
+export default Login;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================ Sign up =============================
+
+===================================================================
+
+import React, { useState } from 'react';
+import axios from 'axios';
+import jwt from 'jsonwebtoken';
+
+const Signup = () => {
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+  });
+
+  const { username, email, password } = formData;
+
+  const onChange = (e) =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const newUser = {
+        username,
+        email,
+        password,
+      };
+
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
+
+      const body = JSON.stringify(newUser);
+      const res = await axios.post('/api/users', body, config);
+
+      const token = jwt.sign({ id: res.data.id }, process.env.JWT_SECRET, {
+        expiresIn: 3600,
+      });
+
+      localStorage.setItem('token', token);
+
+      // Redirect to dashboard
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+
+  return (
+    <div className='form-container'>
+      <h1>Sign up</h1>
+      <form onSubmit={onSubmit}>
+        <div className='form-group'>
+          <label htmlFor='username'>Username</label>
+          <input
+            type='text'
+            name='username'
+            value={username}
+            onChange={onChange}
+            required
+          />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='email'>Email</label>
+          <input
+            type='email'
+            name='email'
+            value={email}
+            onChange={onChange}
+            required
+          />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='password'>Password</label>
+          <input
+            type='password'
+            name='password'
+            value={password}
+            onChange={onChange}
+            required
+            minLength='6'
+          />
+        </div>
+        <input type='submit' value='Sign up' />
+      </form>
+    </div>
+  );
+};
+
+export default Signup;
+
+
+
+
+=================================================================================================
+
+
+To create a sign up and login page with JWT authentication in React-JS, you need to follow the steps below:
+
+Create a React component for the sign up page where users can enter their username, email, and password.
+
+Use Axios or Fetch API to send a POST request to the server with the user data to create a new user.
+
+On the server side, you need to write code to receive the user data, validate it, and store it in the database.
+
+After successful user creation, generate a JWT token and return it to the client.
+
+Store the JWT token in local storage or cookies for persistence.
+
+Create a React component for the login page where users can enter their email and password.
+
+Use Axios or Fetch API to send a POST request to the server with the user data to authenticate the user.
+
+On the server side, you need to write code to receive the user data, validate it, and return a JWT token if the user is authenticated.
+
+Store the JWT token in local storage or cookies for persistence.
+
+Use the JWT token in all subsequent API requests to authenticate the user.
+
+The code logic for the above steps will depend on the specific technologies and frameworks you use for the back-end and front-end.
+
+Note: Do not store sensitive information like password in plain text in local storage or cookies. 
+It is recommended to hash the password before storing it in the database.
+
+
+
+
+
+
+
+
