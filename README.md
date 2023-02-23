@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Project Description
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 # Project Description
 
-## Pges:
+## Pages:
 
 I have added one page which is the home page. There I have some components which are contact form, header, footer, carousel, accordian.
 
