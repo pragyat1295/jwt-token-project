@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jwt-token-project/static/css/main.bd81c416.css",
-    "main.js": "/jwt-token-project/static/js/main.24bafab1.js",
+    "main.js": "/jwt-token-project/static/js/main.d4a6a47b.js",
     "static/js/787.96490bdf.chunk.js": "/jwt-token-project/static/js/787.96490bdf.chunk.js",
     "static/media/doctor1.svg": "/jwt-token-project/static/media/doctor1.dad1bcf6d46779effb28ecc02ebebf7c.svg",
     "static/media/star.svg": "/jwt-token-project/static/media/star.29d99fe3a7ca20add0a66b1822d9be41.svg",
@@ -24,11 +24,11 @@
     "static/media/fb.svg": "/jwt-token-project/static/media/fb.9006a2f3283765f3ed7784b72473cbd5.svg",
     "static/media/wave.svg": "/jwt-token-project/static/media/wave.df2cf907fbf2ba749d6264b63f075bfd.svg",
     "main.bd81c416.css.map": "/jwt-token-project/static/css/main.bd81c416.css.map",
-    "main.24bafab1.js.map": "/jwt-token-project/static/js/main.24bafab1.js.map",
+    "main.d4a6a47b.js.map": "/jwt-token-project/static/js/main.d4a6a47b.js.map",
     "787.96490bdf.chunk.js.map": "/jwt-token-project/static/js/787.96490bdf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd81c416.css",
-    "static/js/main.24bafab1.js"
+    "static/js/main.d4a6a47b.js"
   ]
 }
