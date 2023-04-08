@@ -1,9 +1,14 @@
 
 # Project Description
 
+## Project link
+
+you can find this project live demo at:
+https://pragyat1295.github.io/jwt-token-project/
+
 ## Pages:
 
-This is the JWT-Token generation project. There is no backend involved in this project. THe idea is very simple to generate the jwt-token for the frontend. 
+This is the JWT-Token generation project. There is no backend involved in this project. The idea is very simple to generate the jwt-token for the frontend. 
 
 - Go to the sign-up page and create your profile.
 - After the sign-up along with your sign-in data there is one jwt-token will be generated which you will store in your local storage. 

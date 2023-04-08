@@ -147,7 +147,7 @@ export default function Signup() {
         localStorage.setItem('user', JSON.stringify(user));
         alert('Sign up successful. You can now log in.');
 
-        navigate('/');
+        navigate('/jwt-token-project');
 
     }
     // console.log('country code', selected)
