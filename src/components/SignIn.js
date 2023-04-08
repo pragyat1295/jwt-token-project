@@ -46,24 +46,24 @@ export default function SignIn({ Login }) {
                     </div>
 
                     <label className='try_label'>
+                        <div className="label-text">Email</div>
                         <input className='try_input'
                             autoComplete="off"
                             name="name" id="name" type="text"
                             value={data.email}
                             onChange={(e) => setData({ ...data, email: e.target.value })}
                         />
-                        <div className="label-text">Email</div>
                     </label>
 
                     <div  >
                         <div>
                             <label className='try_label'>
+                                <div className="label-text">Password</div>
                                 <input className='try_input'
                                     name="name" id="password" type={showPassword ? 'text' : 'password'}
                                     value={data.password}
                                     onChange={(e) => setData({ ...data, password: e.target.value })}
                                 />
-                                <div className="label-text">Password</div>
 
 
                             </label>

@@ -61,11 +61,11 @@ color: white;
   font-size: 15px;
   margin-left: 2%;
   /* line-height: 20px; */
-  -moz-transform: translateY(-34px);
+  /* -moz-transform: translateY(-34px);
   -ms-transform: translateY(-34px);
   -webkit-transform: translateY(-34px);
   transform: translateY(-34px);
-  transition: all 0.3s;
+  transition: all 0.3s; */
 }
 
 .signup_label .signup_input {
@@ -79,7 +79,7 @@ color: white;
   outline: 0;
   padding: 5px 20px;
   text-align: start;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
   width: 100%;
 }
 
@@ -115,10 +115,10 @@ color: white;
   font-size: 13px;
   font-weight: 600;
   margin-top: 10px;
-  -moz-transform: translateY(-60px);
+  /* -moz-transform: translateY(-60px);
   -ms-transform: translateY(-60px);
   -webkit-transform: translateY(-60px);
-  transform: translateY(-63px);
+  transform: translateY(-63px); */
   background-color: white;
   width: 10%;
   padding-left: 2%;
@@ -309,11 +309,11 @@ label input:valid+.signup-label-text {
   cursor: text;
   font-size: 15px;
   /* line-height: 20px; */
-  -moz-transform: translateY(-34px);
+  /* -moz-transform: translateY(-34px);
   -ms-transform: translateY(-34px);
   -webkit-transform: translateY(-34px);
   transform: translateY(-34px);
-  transition: all 0.3s;
+  transition: all 0.3s; */
 }
 
 .try_label .try_input {

@@ -166,17 +166,17 @@ export default function Signup() {
             <div className='sign-up-form'>
                 <form onSubmit={handleSubmit}>
                     <label className='signup_label' >
+                        <div className="signup-label-text">
+                            <span>
+                                Name*
+                            </span>
+                        </div>
                         <input className={err.nameErr ? 'error' : 'signup_input'}
                             autoComplete="off"
                             name="name" id="name" type="text"
                             value={data.name}
                             onChange={handleNameChange}
                         />
-                        <div className="signup-label-text">
-                            <span>
-                                Name*
-                            </span>
-                        </div>
                         {err.nameErr && <p style={{ color: 'red' }}>{err.nameErr}</p>}
                     </label>
 
@@ -190,17 +190,17 @@ export default function Signup() {
 
 
                     <label className='signup_label'>
+                        <div className="signup-label-text">
+                            <span>
+                                Email*
+                            </span>
+                        </div>
                         <input className={err.emailErr ? 'error' : 'signup_input'}
                             autoComplete="off"
                             name="name" id="password" type="text"
                             value={data.email}
                             onChange={handleEmailChange}
                         />
-                        <div className="signup-label-text">
-                            <span>
-                                Email*
-                            </span>
-                        </div>
                         {err.emailErr && <p style={{ color: 'red' }}>{err.emailErr}</p>}
                     </label>
                     {/* <CountryDropdown id="UNIQUE_ID" className='YOUR_CSS_CLASS' preferredCountries={['gb', 'us']}
@@ -211,17 +211,17 @@ export default function Signup() {
 
                     <label className='signup_label'>
 
+                        <div className="signup-label-text" style={{ width: '15%' }}>
+                            <span>
+                                Contact Number*
+                            </span>
+                        </div>
                         <input className={err.contactErr ? 'error' : 'signup_input'}
                             autoComplete="off"
                             name="name" id="password" type="text"
                             value={data.contact}
                             onChange={handleContactChange}
                         />
-                        <div className="signup-label-text" style={{ width: '15%' }}>
-                            <span>
-                                Contact Number*
-                            </span>
-                        </div>
                         {err.contactErr && <p style={{ color: 'red' }}>{err.contactErr}</p>}
                     </label>
 
@@ -249,18 +249,18 @@ export default function Signup() {
                         onChange={(e) => setData({ ...data, password: e.target.value })} /> */}
 
                     <label className='signup_label'>
-                        <input className={err.passwordErr ? 'error' : 'signup_input'}
-                            name="password" id="password" type={showPassword ? 'text' : 'password'}
-                            value={data.password}
-                            onChange={handlePasswordChange}
-                        />
                         <div className="signup-label-text">
                             <span>
                                 Password*
                             </span>
                         </div>
+                        <input className={err.passwordErr ? 'error' : 'signup_input'}
+                            name="password" id="password" type={showPassword ? 'text' : 'password'}
+                            value={data.password}
+                            onChange={handlePasswordChange}
+                        />
 
-                        <div style={{marginLeft: '2%', marginTop: '-2%'}}>
+                        <div style={{marginLeft: '2%', marginTop: '1%'}}>
                             <input type='checkbox' onClick={() => setShowPassword(!showPassword)}
                                 // value = {showPassword ? 'hide password' : 'show password'} 
                                 style={{ background: 'none', border: 'none' }} />
@@ -271,16 +271,16 @@ export default function Signup() {
                     </label>
 
                     <label className='signup_label'>
-                        <input className={err.confirmPswdErr ? 'error' : 'signup_input'}
-                            name="confirm_password" id="confirm_password" type='password'
-                            value={data.confirmPswd}
-                            onChange={handleConfirmPswdChange}
-                        />
                         <div className="signup-label-text" style={{ width: '20%' }}>
                             <span>
                                 Confirm Password*
                             </span>
                         </div>
+                        <input className={err.confirmPswdErr ? 'error' : 'signup_input'}
+                            name="confirm_password" id="confirm_password" type='password'
+                            value={data.confirmPswd}
+                            onChange={handleConfirmPswdChange}
+                        />
                         {err.confirmPswdErr && <p style={{ color: 'red' }}>{err.confirmPswdErr}</p>}
                     </label>
 
