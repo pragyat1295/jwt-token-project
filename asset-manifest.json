@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/jwt-token-project/static/css/main.bd81c416.css",
+    "main.js": "/jwt-token-project/static/js/main.42d46c50.js",
+    "static/js/787.96490bdf.chunk.js": "/jwt-token-project/static/js/787.96490bdf.chunk.js",
+    "static/media/doctor1.svg": "/jwt-token-project/static/media/doctor1.dad1bcf6d46779effb28ecc02ebebf7c.svg",
+    "static/media/star.svg": "/jwt-token-project/static/media/star.29d99fe3a7ca20add0a66b1822d9be41.svg",
+    "static/media/doctor2.svg": "/jwt-token-project/static/media/doctor2.7adfc6b1d2b57123a57b5c23346eefc3.svg",
+    "static/media/user2.svg": "/jwt-token-project/static/media/user2.06141d69c41001d172300bee7d51abf9.svg",
+    "static/media/user4.svg": "/jwt-token-project/static/media/user4.b04de4c7315c4bb1344d821b3a1c9c26.svg",
+    "static/media/waves.svg": "/jwt-token-project/static/media/waves.b1c384cfa5b2dacb1d5ebd473451f530.svg",
+    "static/media/user3.svg": "/jwt-token-project/static/media/user3.2fb19b3139855a7bafda1cece96c144d.svg",
+    "static/media/user1.svg": "/jwt-token-project/static/media/user1.93779ebb1d5ab4d7755b5eb0a520a5db.svg",
+    "static/media/lady.svg": "/jwt-token-project/static/media/lady.e802be240f0841b05f38467342d059f9.svg",
+    "static/media/feature_gear.svg": "/jwt-token-project/static/media/feature_gear.230ce2746cb993a407b5c108e825ca6f.svg",
+    "static/media/rightCircle.svg": "/jwt-token-project/static/media/rightCircle.a0a4402631d32f5709291615754f06d9.svg",
+    "static/media/leftCircle.svg": "/jwt-token-project/static/media/leftCircle.2f88aeaf11adabadfc6925b127ce1229.svg",
+    "static/media/globe.svg": "/jwt-token-project/static/media/globe.71ad0b339294e8cc45b0007d86669883.svg",
+    "static/media/instagram.svg": "/jwt-token-project/static/media/instagram.9509b609e8f7d9cd9b9eff168520ae4c.svg",
+    "static/media/twitter.svg": "/jwt-token-project/static/media/twitter.ece25215077d709f8384ccbc7bc1abe0.svg",
+    "static/media/logo.svg": "/jwt-token-project/static/media/logo.3ede8529abda6991e46181520d559765.svg",
+    "index.html": "/jwt-token-project/index.html",
+    "static/media/arrow_back.svg": "/jwt-token-project/static/media/arrow_back.297e95f2485a3ee04f90707d428937e2.svg",
+    "static/media/fb.svg": "/jwt-token-project/static/media/fb.9006a2f3283765f3ed7784b72473cbd5.svg",
+    "static/media/wave.svg": "/jwt-token-project/static/media/wave.df2cf907fbf2ba749d6264b63f075bfd.svg",
+    "main.bd81c416.css.map": "/jwt-token-project/static/css/main.bd81c416.css.map",
+    "main.42d46c50.js.map": "/jwt-token-project/static/js/main.42d46c50.js.map",
+    "787.96490bdf.chunk.js.map": "/jwt-token-project/static/js/787.96490bdf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd81c416.css",
+    "static/js/main.42d46c50.js"
+  ]
+}
