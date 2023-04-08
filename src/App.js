@@ -90,7 +90,7 @@ function App() {
           <Router>
             <Header Logout={Logout} />
             <Routes>
-              <Route path='/' element={(
+              <Route path='/jwt-token-project' element={(
                 <Home />
               )} />
             </Routes>
@@ -99,7 +99,7 @@ function App() {
           </Router> :
           <Router>
             <Routes>
-              <Route path='/' element={(
+              <Route path='/jwt-token-project' element={(
                 <SignIn Login={Login} 
                 // Checked = {} 
                 />

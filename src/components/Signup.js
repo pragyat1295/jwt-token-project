@@ -299,7 +299,7 @@ export default function Signup() {
 
             <div>
                 Already have an account?
-                <NavLink to='/' style={{ textDecoration: 'none' }}>
+                <NavLink to='/jwt-token-project' style={{ textDecoration: 'none' }}>
                     <span style={{ marginLeft: '1%' }}>
                         Login
                     </span>
