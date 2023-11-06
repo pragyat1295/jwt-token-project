@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../images/footer/logo.svg';
+import Logo from '../images/home/pm_logo.webp';
 import FB from '../images/footer/fb.svg';
 import Twitter from '../images/footer/twitter.svg';
 import Instagram from '../images/footer/instagram.svg';
@@ -11,7 +11,7 @@ export default function Footer() {
     <div className = 'footer_container'>
         <div className = 'row'>
             <div className = 'col-12 col-lg-3'>
-                <img src = {Logo} alt = '../logo'/>
+                <img src = {Logo} alt = '../logo' height={50} width={50}/>
                 <div>© loremipsum 2023. All rights reserved. </div>
             </div>
 

@@ -1,6 +1,6 @@
 
 import './App.css';
-import React, { useEffect, useState } from 'react';
+import React, { createContext, useRef, useState } from 'react';
 import Signup from './components/Signup';
 import SignIn from './components/SignIn';
 import Header from './components/Header';
@@ -16,16 +16,14 @@ import {
   Link
 } from 'react-router-dom';
 
+export const RefContext = createContext(null)
 function App() {
 
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('isLoggedIn')) ;
 
-  // const email = 'abc';
-  // const password = '1';
-  const [verified, setVerified] = useState(false);
-  const [verifiedUser, setVerifiedUser] = useState(null);
-
-  const [err, setErr] = useState({});
+  // const [verified, setVerified] = useState(false);
+  // const [verifiedUser, setVerifiedUser] = useState(null);
+  const ref = useRef(null);
 
 
   const Login = (item) => {
@@ -37,7 +35,6 @@ function App() {
     // // console.log('verified user is' ,verifiedUser);
     // console.log(item);
     // if (verifiedUser.email === item.email && verifiedUser.password === item.password) {
-    //   console.log('logged in');
     //   // setVerified(true);
     //   localStorage.setItem('isLoggedIn', true);
     //   setErr('');
@@ -70,17 +67,16 @@ function App() {
       }
   }
 
-  // console.error(err ? err : null);
- 
-
-  // const RememberMe = (value) => {
-  //   value ? localStorage.setItem('isLoggedIn', true) : 
-  // }
+  const handleContactClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  };
 
   const Logout = () => {
     localStorage.removeItem('isLoggedIn');
     setIsLoggedIn(false);
   }
+
+
 
   return (
     <div className="App">
@@ -88,14 +84,16 @@ function App() {
         isLoggedIn  ?
 
           <Router>
-            <Header Logout={Logout} />
+            <RefContext.Provider value={{ref}}>
+            <Header Logout={Logout} onContactClicked = {handleContactClick} />
             <Routes>
               <Route path='/jwt-token-project' element={(
-                <Home />
+                <Home ref = {ref} />
               )} />
             </Routes>
 
             <Footer/>
+            </RefContext.Provider>
           </Router> :
           <Router>
             <Routes>

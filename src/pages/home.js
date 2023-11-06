@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Star from '../images/star.svg';
 import Lady from '../images/home/lady.svg';
 import Waves from '../images/home/waves.svg';
@@ -12,9 +12,11 @@ import faq from '../data/faq';
 import '../styles/home.css';
 // import Carousel, { CarouselItem } from '../components/Carousel'
 import Carousel from '../components/Carousel2';
+import { RefContext } from '../App';
 
 export default function Home({ Logout }) {
     const [selected, setSelected] = useState(null);
+    const {ref} = useContext(RefContext);
 
     const toggle = (id) => {
         if (id === selected) {
@@ -244,7 +246,7 @@ export default function Home({ Logout }) {
                   </div> */}
             </div>
 
-            <div>
+            <div id = "contact-form" ref={ref} >
                 <Form />
             </div>
         </div>
